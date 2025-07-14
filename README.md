@@ -193,7 +193,7 @@ llm_with_tools = llm.bind_tools(tools)
 
 **Web Interface (Recommended):**
 ```bash
-python web_app.py
+streamlit run web_app.py
 ```
 *This launches the Streamlit web interface automatically*
 
@@ -202,16 +202,6 @@ python web_app.py
 python main.py
 ```
 *This starts the command-line interface for terminal-based interaction*
-
-**Alternative Web Interface Launch:**
-```bash
-streamlit run web_app.py
-```
-
-**Web Interface with Custom Port:**
-```bash
-streamlit run web_app.py --server.port 8501
-```
 
 ## Usage Examples
 
@@ -226,33 +216,6 @@ Bot:  Added 'Buy groceries' to your to-do list.
 User: What's on my list?
 Bot:  Here are your current to-dos:
      1. Buy groceries
-```
-
-### Advanced Todo Management
-```
-User: Add these tasks: finish project, call dentist, book flight
-Bot: I'll add those tasks for you one by one:
-      Added 'finish project' to your to-do list.
-      Added 'call dentist' to your to-do list.
-      Added 'book flight' to your to-do list.
-
-User: Remove the first task
-Bot:  Removed 'finish project' from your to-do list.
-
-User: Show my updated list
-Bot:  Here are your current to-dos:
-     1. call dentist
-     2. book flight
-```
-
-### Context-Aware Responses
-```
-User: I completed the dentist appointment
-Bot: That's great, Sarah! I'm glad you got that taken care of. 
-     Would you like me to remove "call dentist" from your to-do list?
-
-User: Yes please
-Bot:  Removed 'call dentist' from your to-do list.
 ```
 
 ##  Web Interface Features
@@ -314,14 +277,6 @@ Bot:  Removed 'call dentist' from your to-do list.
 | **Storage** | JSON Files | Persistent data storage |
 | **Memory** | ConversationBufferMemory | Conversation state management |
 | **Validation** | Pydantic | Data validation & schemas |
-
-##  Code Quality
-
-- **Type Hints**: Full type annotation for better maintainability
-- **Error Handling**: Comprehensive exception management
-- **Documentation**: Detailed docstrings and inline comments
-- **Modular Design**: Separation of concerns across multiple files
-- **Configuration Management**: Centralized settings in config.py
 
 ##  Support
 
