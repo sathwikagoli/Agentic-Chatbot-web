@@ -174,8 +174,8 @@ llm_with_tools = llm.bind_tools(tools)
 
 1. **Clone Repository**
    ```bash
-   git clone <https://github.com/sathwikagoli/Agentic-Chatbot-web>
-   cd <to- your-directory>
+   git clone https://github.com/sathwikagoli/Agentic-Chatbot-web
+   cd to-project-directory
    ```
 
 2. **Install Dependencies**
