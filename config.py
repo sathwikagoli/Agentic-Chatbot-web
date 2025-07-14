@@ -17,5 +17,5 @@ TEMPERATURE = 0.7
 MAX_TOKENS = 1000
 
 # Agent settings
-AGENT_NAME = "TodoBot"
+AGENT_NAME = "Agentic bot"
 AGENT_DESCRIPTION = "A helpful assistant that manages conversations and to-do lists"
