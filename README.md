@@ -175,7 +175,7 @@ llm_with_tools = llm.bind_tools(tools)
 1. **Clone Repository**
    ```bash
    git clone https://github.com/sathwikagoli/Agentic-Chatbot-web
-   cd to-project-directory
+   cd Agentic-Chatbot-web
    ```
 
 2. **Install Dependencies**
@@ -185,13 +185,8 @@ llm_with_tools = llm.bind_tools(tools)
 
 3. **Environment Setup**
    ```bash
-   # Create .env file
-   echo "GOOGLE_API_KEY=your_api_key_here" > .env
-   ```
-
-4. **Create Data Directory**
-   ```bash
-   mkdir data
+   # add your Google API key in  .env file
+   GOOGLE_API_KEY=your_api_key_here
    ```
 
 ### Running the Application
