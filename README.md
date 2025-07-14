@@ -1,6 +1,6 @@
-#  TodoBot - AI-Powered Personal Assistant
+#  Agentic ChatBot - AI-Powered Personal Assistant
 
-An intelligent conversational agent built with LangChain and Google Gemini that manages conversations and to-do lists through natural language interactions.
+An intelligent conversational agent built with LangChain and Google Gemini that manages conversations and to-do lists through natural language interactions.(Todo Bot)
 
 ##  Project Overview
 
@@ -275,26 +275,6 @@ Bot:  Removed 'call dentist' from your to-do list.
 - **Gradient Design**: Modern, professional appearance
 - **Keyboard Shortcuts**: Enter to send, etc.
 
-## 🔒 Error Handling & Robustness
-
-### Error Recovery Mechanisms
-- **API Failures**: Graceful fallback with user-friendly messages
-- **File System Errors**: Automatic directory creation and permission handling
-- **Malformed Input**: Input validation and sanitization
-- **Memory Corruption**: Backup and recovery for conversation history
-- **Tool Failures**: Detailed error reporting with suggested actions
-
-### Input Validation
-```python
-# Task validation
-if not task.strip():
-    return "Please provide a task to add."
-
-# Duplicate checking
-if task.lower() in [existing.lower() for existing in todos]:
-    return f"Task '{task}' already exists in your to-do list."
-```
-
 ##  Performance Optimizations
 
 ### Memory Management
@@ -321,22 +301,12 @@ if task.lower() in [existing.lower() for existing in todos]:
 - **Database Integration**: PostgreSQL/SQLite for better scalability
 - **User Authentication**: Multi-user support with secure login
 - **Rich Media Support**: Image uploads, voice notes, file attachments
-- **Advanced Search**: Full-text search across todos and conversations
 - **Export Features**: PDF/CSV export for todos and chat history
-
-### Advanced Features
-- **Smart Scheduling**: Calendar integration with deadline reminders
-- **AI Suggestions**: Proactive task recommendations based on patterns
-- **Collaboration**: Shared todo lists with team members
-- **Integration Hub**: Connect with Slack, Trello, Google Calendar
-- **Voice Interface**: Speech-to-text for hands-free interaction
 
 ### Technical Improvements
 - **Vector Storage**: Semantic search using embeddings (ChromaDB/Pinecone)
 - **Async Processing**: Non-blocking operations for better performance
 - **Monitoring**: Logging, metrics, and health checks
-- **Testing Suite**: Comprehensive unit and integration tests
-- **Docker Deployment**: Containerized deployment with orchestration
 
 ## 📋 Technical Stack
 
